@@ -1,0 +1,128 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Josefin Sans', sans-serif;
+    box-sizing: border-box;
+   
+}
+
+
+header{
+    width: 100%;
+    height: 100vh;
+    background-image:  linear-gradient(180deg, rgba(0,0,0,0.5), rgba(0,0,0,0.1)), url(./images/Featured-image-Shimla-India.jpg);
+    background-repeat: repeat;
+    background-size: cover;
+
+}
+nav{
+    width: 100%;
+    height: 12vh;
+    background-color: rgba(0, 0, 0, 0.3);
+    color: white;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+nav .logo{
+    width: 25%;
+    text-align: center;
+    
+
+    
+   
+}
+
+nav .nav-menu{
+    width: 40%;
+    color: white;
+    display: flex;
+    justify-content: space-around;
+}
+
+nav a{
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+nav a:first-child{
+    color: rgb(42, 225, 245);
+}
+nav a:hover{
+    color: rgb(42, 225, 245);
+}
+
+main{
+    width: 100%;
+    height: 88vh;
+    color: whitesmoke;
+    font-style: normal;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 3px;
+    
+}
+
+section h1{
+    margin: 10px 0 20px 0;
+    font-size: 3.5rem;
+    text-shadow: 1px 1px 2px black;
+    word-spacing: 3px;
+}
+
+section h3{
+    margin: 10px 0 15px 0;
+    font-size: 2rem;
+    text-shadow: 1px 1px 1px black;
+}
+
+section a{
+    color: black;
+    font-weight: bold;
+    font-size: 2rch;
+    text-decoration: none;
+    background-color: rgb(143, 206, 249);
+    border-radius: 25px;
+    padding: 7px;
+    letter-spacing: normal;
+    border-color: black;
+  
+}
+section a:hover{
+    background-color: white;
+    color: red;
+    transition:all 1s ease;
+    
+}
+
+.change-content:after{
+    color:rgb(244, 128, 70);
+    background-color: rgba(231, 222, 222, 0.658);
+    font-weight: 900;
+    padding: 7px;
+    border-radius: 30px;
+    border-color: rgb(19, 18, 19);
+    content: '';
+    animation: changetext 10s infinite linear;
+    animation-delay: 1s;
+
+}
+
+@keyframes changetext {
+    0%{content: "Ladakh";}
+    10%{content: "Taj Mahal";}
+    20%{content: "Hampi";}
+    30%{content: "Pondicherry";}
+    40%{content: "Darjeeling";}
+    50%{content: "Coorg";}
+    60%{content: "Jainta Hill";}
+    70%{content: "Kutch";}
+    80%{content: "And Many More";}
+    
+}
+

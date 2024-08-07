@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nishitha's Simple Portfolio</title>
+    <link rel="stylesheet" href="portfolio.css">
+    <link rel="shortcut icon" href="./assets/n.jpg" type="image/svg+xml">
+    <script src="https://kit.fontawesome.com/3d179cd4a1.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="" class="name">
+                <ul>
+                    <li><a href="#header">HOME</a></li>
+                    <li><a href="#about">ABOUT</a></li>
+                    <li><a href="#projects">PROJECTS</a></li>
+                    <li><a href="#contact">CONTACT</a></li>
+                </ul>
+            </nav>
+            <div class="header-text">
+                <p>TECH STUDENT</p>
+                <h1>Hello, I'm <span>Nishitha</span></h1>
+            </div>
+        </div>    
+    </div>
+
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="./assets/profile.jpg">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-tile">About Me</h1><br>
+                     <p>As a student in Artificial Intelligence and Machine Learning, I fuse theoretical knowledge with a keen interest in practical applications. My academic journey delves into the intricacies of web design, mobile app development, and data analysis. Eager to contribute fresh perspectives and innovation to the evolving landscape of technology</p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                        <p class="tab-links" onclick="opentab('certificates')">Certificates</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>UI</span><br>Designing Web/App interface</li>                        
+                            <li><span>Web Development</span><br>Web app/Mobile App  Development</li>
+                            <li><span>Programming languages</span><br>C, Python and Flutter</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2021-2025</span><br>BE AIML from VCET<br>CGPA: 8.83</li>
+                            <li><span>2021</span><br>Grade 12 from PUE<Br>Percentage: 84.66%</li>
+                            <li><span>2019</span><br>Grade 10 from SSC<br>Percentage: 70%</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="certificates">
+                        <ul>
+                            <li><span>Udemy </span><br>Flutter<br>Basics of Python<br>C++</li>
+                            <li><span>Soft Skills</span><br>TCS-ion[Young Professional]</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="projects">
+    <div class="container">
+        <hi class="sub-title">Projects</hi>
+        <div class="services-list">
+            <div>
+                <i class="fa-solid fa-code"></i>
+                <h2>Web Design</h2><br>
+                <p>
+                    Creating an effective travel website involves intuitive navigation, responsive design, and visually appealing layouts showcasing destinations and deals. </p>
+            </div>
+            <div>
+                <i class="fa-brands fa-flutter"></i>
+                <h2>Flutter</h2><br>
+                <p>Flutter is an open-source UI toolkit by Google, ideal for developing a pet adoption app that works seamlessly across mobile, web, and desktop platforms.</p>
+            </div>
+            <div>
+                <i class="fas fa-robot"></i>
+                <h2>Machine learning</h2><br>
+                <p>It is widely used in applications such as image recognition, fraud detection, and predictive maintenance.
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-tile">Contact ME</h1>
+                <p><i class="fa-solid fa-share"></i>name@example.com</p>
+                <p><i class="fa-solid fa-phone"></i>6958604234</p>
+                <div class="social-icons">
+                    <a href="#"><i class="fa-brands fa-github"></i></a>
+                    <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+                </div>
+            </div>
+            <div class="contact-right">
+                <form>
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="5" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>copyright © Diya. 2003 <i class="fa-regular fa-heart"></i></p>
+    </div>
+</div>
+<script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+</script>
+</body>
+</html>
